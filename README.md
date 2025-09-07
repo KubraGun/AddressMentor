@@ -16,12 +16,12 @@ All architecture, design, and core idea belong to **Team Captain: Ayşe Kübra G
 
 ## 🧩 Core Architecture
 
-### Core AI Agents:contentReference[oaicite:0]{index=0}
+### Core AI Agents:contentReference
 - **AddressCleanerAgent** → Cleans raw text (spelling, punctuation, encoding, Turkish character restoration, abbreviation expansion).  
 - **GeoCoderAgent** → Maps normalized addresses to precise geographic coordinates (lat/lon).  
 - **SuggestionAgent** → Completes missing fields and suggests candidate addresses.  
 
-### Extended Sub-Agent Mapping:contentReference[oaicite:1]{index=1}
+### Extended Sub-Agent Mapping:
 - **AddressCleanerAgent**  
   - InputNormalizerAgent  
   - StructuralParserAgent  
@@ -46,7 +46,7 @@ All architecture, design, and core idea belong to **Team Captain: Ayşe Kübra G
 
 ## 🌍 Geocoding Strategy
 
-We adopt a **Nominatim + Cache + Fallback** architecture:contentReference[oaicite:2]{index=2}:
+We adopt a **Nominatim + Cache + Fallback**
 
 1. **Clean First, Geocode Second** → Always geocode normalized/expanded text.  
 2. **Disambiguation** → Resolve ambiguous neighborhood/street names before geocoding.  
